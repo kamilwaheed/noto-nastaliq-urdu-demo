@@ -201,6 +201,10 @@ td {
 /*------------------------------*\
     #BASE/PAGE
 \*------------------------------*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 100%;
   font-family: sans-serif;
@@ -209,6 +213,7 @@ body {
 #page {
   max-width: 750px;
   margin: auto;
+  padding: 0 35px;
 }
 
 /*------------------------------*\
@@ -254,4 +259,15 @@ body {
 .byline__title {
   display: block;
   color: #767676;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  figure.float-left {
+    float: left;
+  }
 }
