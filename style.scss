@@ -1,0 +1,97 @@
+/*------------------------------*\
+    #IMPORTS/LIBRARIES
+\*------------------------------*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css);
+
+$typecsset-base-font-size:      16px;
+$typecsset-base-line-height:    38px;
+$typecsset-show-baseline:       false;
+$light-grey:                    #767676;
+$grey:                          #404040;
+
+@import "typecsset/typecsset";
+
+
+
+
+/*------------------------------*\
+    #BASE/PAGE
+\*------------------------------*/
+
+
+body {
+  font-size: 100%;
+
+  font-family: sans-serif;
+}
+
+
+#page {
+  max-width: 750px;
+  margin: auto;
+}
+
+
+
+
+/*------------------------------*\
+    #URDU-TYPOGRAPHY-CLASSES
+\*------------------------------*/
+
+.urdu {
+  font-family: 'Noto Nastaliq Urdu Draft', serif;
+  text-align: right;
+}
+
+.urdu-word-spacing-fix {
+  // fix the default word spacing
+  word-spacing: 5px;
+}
+
+.urdu-margin-top-fix {
+  // fix the margin-top on heading
+  margin-top: $typecsset-base-line-height;
+}
+
+
+
+
+
+/*------------------------------*\
+    #ABOUT-SECTION
+\*------------------------------*/
+
+.about {
+  text-align: center;
+
+  span {
+    display: block;
+  }
+
+  border-bottom: 1px solid #999;
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+/*------------------------------*\
+    #ARTICLE
+\*------------------------------*/
+
+.article__body {
+  margin-top: $typecsset-base-line-height;
+}
+
+.byline__name {
+  display: block;
+  color: $grey;
+}
+
+.byline__title {
+  display: block;
+  color: $light-grey;
+}
